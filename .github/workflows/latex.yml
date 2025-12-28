@@ -65,7 +65,7 @@ jobs:
           prerelease: false
       # Прикладываемые файлы надо заливать отдельным step
       - name: Upload pdf asset
-        uses: actions/upload-release-asset@v6
+        uses: actions/upload-release-asset@v4
         env:
           # Тоже требуется токен
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
