@@ -1,5 +1,63 @@
-\documentclass[12pt]{article}
+\documentclass[a4paper,12pt]{article} %размер бумаги устанавливаем А4, шрифт 12пунктов
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}         % кодовая страница документа
+\usepackage[greek,russian]{babel}%используем русский и английский языки с переносами
+
+\usepackage{amsmath,cite,enumerate,indentfirst,url,hypertoc,todonotes} %пакеты расширений
+\usepackage{varioref,hyperref,cleveref,tablefootnote,mdframed}
+
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+
+\usepackage{textcomp} % provide euro and other symbols
+
+\usepackage{xcolor}
+\usepackage{xurl} % add URL line breaks if available
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+
+
+
+
+%\setcounter{secnumdepth}{2}
+%\setcounter{tocdepth}{1}
+
+%\usepackage[pdftex]{graphicx} %вставка графики
+%\bibliography{bib,biblio}
+%\bibliographystyle{plain}
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\makeatother
+\renewcommand\baselinestretch{1.25}\large
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=3cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+
+\renewcommand\baselinestretch{1.3}\large
+
 \begin{document}
-Hello world!
-$Hello world!$ %math mode 
-\end{document}
+\input{0B_Title}
+\input{0_Intro}
+\input{1.1_Sushnost_i_trebovanija}
+
+%\input{1.3_Kriterii_ocenki_eor}
+\input{1.3_Kriterii.tex}
+\input{1.3_Instruments}
+\input{1.4_Vivod}
+\input{2.0_Pedogog_Potential}
+\input{2.2_Analiz}
+\input{2.1_Analiz}
+\input{2.2_Project}
+\input{Y_End}
+\input{Z_Bibliography}
